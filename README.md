@@ -6,6 +6,18 @@ Site estático desenvolvido com HTML e CSS, com conteúdo sobre casas e personag
 
 Abra `html/landingpage.html` usando uma extensão de servidor local, como o Live Server do VS Code. Servir o projeto localmente permite que o navegador carregue corretamente os arquivos de estilo, imagens e fontes.
 
+## Publicação
+
+O GitHub Actions publica automaticamente este site no GitHub Pages quando há alterações nos arquivos do site na branch `main`.
+
+Para habilitar a publicação, abra **Settings > Pages** no repositório [`landingpage-game-of-thrones`](https://github.com/gorucchi07/landingpage-game-of-thrones/settings/pages) e selecione **GitHub Actions** em **Build and deployment > Source**. Essa configuração só precisa ser feita uma vez por alguém com permissão de administrador no repositório.
+
+O site ficará disponível em:
+
+<https://gorucchi07.github.io/landingpage-game-of-thrones/>
+
+O workflow monta `index.html` na raiz publicada e inclui os estilos, imagens e fontes necessários, sem publicar outros projetos.
+
 ## Estrutura
 
 ```text
